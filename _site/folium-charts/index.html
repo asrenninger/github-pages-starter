@@ -9,15 +9,15 @@
   <head>
     <meta charset="utf-8" />
 
-<!-- begin _includes/seo.html --><title>Embedding Folium charts - MUSA 620: Data Wrangling and Data Visualization</title>
+<!-- begin _includes/seo.html --><title>Example: Embedding Folium charts - MUSA 550: Geospatial Data Science in Python</title>
 <meta name="description" content="Embedding interactive Folium charts on static pages using Jekyll.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="MUSA 620: Data Wrangling and Data Visualization">
-<meta property="og:title" content="Embedding Folium charts">
+<meta property="og:site_name" content="MUSA 550: Geospatial Data Science in Python">
+<meta property="og:title" content="Example: Embedding Folium charts">
 <meta property="og:url" content="http://localhost:4000/folium-charts/">
 
 
@@ -71,7 +71,7 @@
   href="/feed.xml"
   type="application/atom+xml"
   rel="alternate"
-  title="MUSA 620: Data Wrangling and Data Visualization Feed"
+  title="MUSA 550: Geospatial Data Science in Python Feed"
 />
 
 <!-- https://t.co/dKP3o1e -->
@@ -117,67 +117,21 @@
   
 </script>
 
- 
+
 <style>
-  .vega-actions a {
-      margin-right: 12px;
-      color: #757575;
-      font-weight: normal;
-      font-size: 13px;
-  }
   .error {
-      color: red;
+    color: red;
+  }
+  .vega-bindings {
+    display: none !important;
   }
 </style>
-<script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm//vega"
-></script>
-<script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm//vega-lite"
-></script>
-<script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm//vega-embed"
-></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
 
 <script type="text/javascript">
-
-</script>
-
-
-
-
-
-<style>
-  .fullwidth {
-    display: flex;
-    justify-content: center;
-  }
-</style>
-
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet/dist/leaflet.css"
-  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-  crossorigin=""
-/>
-
-<script type="module">
-  import notebook from "";
-
-  const renders = {}
   
-
-  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@2?module";
-  for (let i in renders)
-    renders[i] = document.querySelector(renders[i]);
-
-  Runtime.load(notebook, (variable) => {
-    if (renders[variable.name])
-      return new Inspector(renders[variable.name]);
-  });
 </script>
 
 
@@ -231,7 +185,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-        <a class="site-title" href="/">MUSA 620: Data Wrangling and Data Visualization</a>
+        <a class="site-title" href="/">MUSA 550: Geospatial Data Science in Python</a>
         <ul class="visible-links"></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -360,7 +314,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Embedding Folium charts">
+    <meta itemprop="headline" content="Example: Embedding Folium charts">
     <meta itemprop="description" content="Embedding interactive Folium charts on static pages using Jekyll.">
     <meta itemprop="datePublished" content="April 13, 2019">
     
@@ -368,7 +322,7 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Embedding Folium charts
+          <h1 id="page-title" class="page__title" itemprop="headline">Example: Embedding Folium charts
 </h1>
           
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
@@ -398,13 +352,15 @@
 
 <h2 id="osmnx-and-street-networks">OSMnx and Street Networks</h2>
 
+<p>The shortest route between the Art Museum and the Liberty Bell:</p>
+
 <div id="folium-chart-1"></div>
 
 <h2 id="percentage-of-households-without-internet">Percentage of Households without Internet</h2>
 
 <div id="folium-chart-2"></div>
 
-<p>See the <a href="https://github.com/MUSA-620-Spring-2019/week-10/blob/master/lecture-10.ipynb">week 10 lecture slides</a> for the code that produced these plots.</p>
+<p>See the <a href="https://musa-550-fall-2020.github.io/slides/lecture-9B.html">lecture 9B slides</a> and the <a href="https://musa-550-fall-2020.github.io/slides/lecture-10A.html">lecture 10A slides</a> for the code that produced these plots.</p>
 
         
       </section>
@@ -447,7 +403,7 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Embedding+Folium+charts%20http%3A%2F%2Flocalhost%3A4000%2Ffolium-charts%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Example%3A+Embedding+Folium+charts%20http%3A%2F%2Flocalhost%3A4000%2Ffolium-charts%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Ffolium-charts%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -461,7 +417,7 @@
       <a href="#" class="pagination--pager disabled">Previous</a>
     
     
-      <a href="/measles-charts/" class="pagination--pager" title="1 Chart, 3 Libraries
+      <a href="/measles-charts/" class="pagination--pager" title="Example: Embedding Altair &amp; Hvplot Charts
 ">Next</a>
     
   </nav>
@@ -486,7 +442,7 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/shootings/" rel="permalink">Shootings in Philadelphia
+        <a href="/blog/welcome-to-github-pages/" rel="permalink">Welcome to GitHub Pages!
 </a>
       
     </h2>
@@ -499,7 +455,34 @@
   less than 1 minute read
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">Embedding Observable cells to show shootings in Philadelphia
+    <p class="archive__item-excerpt" itemprop="description">You’ll find this post in your _posts directory. Go ahead and edit it and commit your changes to to the repository. GitHub will automatically rebuild your sit...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/example-post/" rel="permalink">Example: Embedding Matplotlib Images
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">This is an example blog post
 </p>
   </article>
 </div>
@@ -514,35 +497,7 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/test-post/" rel="permalink">This is a Test
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  less than 1 minute read
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Test
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/measles-charts/" rel="permalink">1 Chart, 3 Libraries
+        <a href="/measles-charts/" rel="permalink">Example: Embedding Altair &amp; Hvplot Charts
 </a>
       
     </h2>
@@ -602,7 +557,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 Nick Hand. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 Nick Hand. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

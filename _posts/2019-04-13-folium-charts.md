@@ -15,7 +15,7 @@ This post will show examples of embedding interactive maps produced using [Foliu
 
 ## OSMnx and Street Networks
 
-The shortest route between Spring Garden Station and Frankford Hall:
+The shortest route between the Art Museum and the Liberty Bell:
 
 <div id="folium-chart-1"></div>
 
@@ -23,4 +23,4 @@ The shortest route between Spring Garden Station and Frankford Hall:
 
 <div id="folium-chart-2"></div>
 
-See the [week 9 lecture slides](https://github.com/MUSA-620-Fall-2019/week-9/blob/master/lecture-9.ipynb) for the code that produced these plots.
+See the [lecture 9B slides](https://musa-550-fall-2020.github.io/slides/lecture-9B.html) and the [lecture 10A slides](https://musa-550-fall-2020.github.io/slides/lecture-10A.html) for the code that produced these plots.

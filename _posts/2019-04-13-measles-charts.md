@@ -27,15 +27,15 @@ import altair as alt
 alt.renderers.enable('notebook')
 ```
 
-## Holoviews Example
+## HvPlot Example
 
-Lastly, the measles incidence produced using the Holoviews package:
+Lastly, the measles incidence produced using the HvPlot package:
 
 <div id="hv-chart-1"></div>
 
 ## Notes
 
-- See the [raw source code](https://raw.githubusercontent.com/nickhand/static-site-template/master/_posts/2019-04-13-measles-charts.md) of this post for details on how these charts were embedded.
-- See the [week 13 lecture slides](https://github.com/MUSA-620-Fall-2019/week-13/blob/master/lecture-13.ipynb) for the code that produced these plots.
+- See the [raw source code](https://raw.githubusercontent.com/MUSA-550-Fall-2020/github-pages-starter/master/_posts/2019-04-13-measles-charts.md) of this post for details on how these charts were embedded.
+- See the [lecture 13A slides](https://github.com/MUSA-550-Fall-2020/week-13/blob/master/lecture-13A.ipynb) for the code that produced these plots.
 
 **Important: When embedding charts, you will likely need to adjust the width/height of the charts before embedding them in the page so they fit nicely when embedded.**
