@@ -3,7 +3,7 @@ title: "Example: Embedding Matplotlib Images"
 date: 2019-04-17
 published: true
 tags: [dataviz, matplotlib]
-excerpt: "This is an example blog post"
+excerpt: "This is an example blog post that embeds a matplotlib image."
 toc: true
 toc_sticky: true
 ---
