@@ -10,6 +10,8 @@ hv-loader:
   hv-chart-1: "charts/measlesHvplot.html"
 toc: true
 toc_sticky: true
+show_date: true
+read_time: false
 ---
 
 This post will show examples of embedding interactive charts produced using [Altair](https://altair-viz.github.io) and [Hvplot](https://hvplot.pyviz.org/).
